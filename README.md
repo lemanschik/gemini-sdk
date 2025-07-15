@@ -15,3 +15,4 @@ while this creates a release of gemini-desktop and gemini-cloud it can also be s
 - https://github.com/orgs/google-gemini/projects/11/views/10
 
 
+It also offers a mcp and tool integration for gemini-cli so that you can easy open a gui for your current gemini cli project local or remote.
