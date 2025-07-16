@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": { "url": "https://github.com/lemanschik/gemini-sdk", "directory": "packages/gemini-desktop" },
+  "repository": { "url": "https://github.com/lemanschik/gemini-sdk" },
   "keywords": ["gemni-cli","gemni","desktop"],
   "author": "Frank",
   "license": "Apache-2.0",

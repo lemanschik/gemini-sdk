@@ -1,0 +1,13 @@
+{{!-- This prompt is licensed under the MIT License (https://opensource.org/license/mit).
+Made improvements or adaptations to this prompt template? We’d love for you to share it with the community! Contribute back here:
+https://github.com/eclipse-theia/theia/discussions/new?category=prompt-template-contribution --}}
+## Code snippet
+```
+{{codeCompletionPrefix}}[[MARKER]]{{codeCompletionSuffix}}
+```
+
+## Meta Data
+- File: {{codeCompletionFile}}
+- Language: {{codeCompletionLanguage}}
+
+Replace [[MARKER]] with the exact code to complete the code snippet. Return only the replacement of [[MARKER]] as plain text.

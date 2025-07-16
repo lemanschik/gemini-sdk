@@ -1,0 +1,8 @@
+{{!-- This prompt is licensed under the MIT License (https://opensource.org/license/mit).
+Made improvements or adaptations to this prompt template? We’d love for you to share it with the community! Contribute back here:
+https://github.com/eclipse-theia/theia/discussions/new?category=prompt-template-contribution --}}
+user-request: {{userRequest}}
+shell: {{shell}}
+cwd: {{cwd}}
+recent-terminal-contents:
+{{recentTerminalContents}}

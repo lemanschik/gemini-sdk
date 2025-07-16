@@ -1,0 +1,102 @@
+{
+    "ai-features.AiEnable.enableAI": true,
+    "ai-features.google.apiKey": "",
+    "ai-features.openAiCustom.customOpenAiModels": [
+        {
+            "model": "gemini-2.5-flash",
+            "url": "localhost node -p get gemini-cli",
+            "id": "gemni-cli/flash",
+            "apiKey": false,
+            "developerMessageSettings": "system"
+        },
+        {
+            "model": "gemini-2.5-pro",
+            "url": "localhost node -p get gemini-cli",
+            "id": "gemni-cli/pro",
+            "apiKey": false,
+            "developerMessageSettings": "system"
+        }
+    ],
+    "ai-features.agentSettings": {
+        "Terminal Assistant": {
+            "languageModelRequirements": [
+                {
+                    "purpose": "suggest-terminal-commands",
+                    "identifier": "google/gemini-2.0-flash-lite"
+                }
+            ]
+        },
+        "Command": {
+            "languageModelRequirements": [
+                {
+                    "purpose": "command",
+                    "identifier": "google/gemini-2.5-pro-preview-05-06"
+                }
+            ]
+        },
+        "Coder": {
+            "languageModelRequirements": [
+                {
+                    "purpose": "chat",
+                    "identifier": "google/gemini-1.5-pro"
+                }
+            ]
+        },
+        "chat-session-summary-agent": {
+            "languageModelRequirements": [
+                {
+                    "purpose": "chat-session-summary",
+                    "identifier": "google/gemini-2.5-pro-preview-05-06"
+                }
+            ]
+        },
+        "Chat Session Naming": {
+            "languageModelRequirements": [
+                {
+                    "purpose": "chat-session-naming",
+                    "identifier": "google/gemini-1.5-flash"
+                }
+            ]
+        },
+        "Code Completion": {
+            "languageModelRequirements": [
+                {
+                    "purpose": "code-completion",
+                    "identifier": "google/gemini-1.5-flash"
+                }
+            ]
+        },
+        "Architect": {
+            "languageModelRequirements": [
+                {
+                    "purpose": "chat",
+                    "identifier": "google/gemini-1.5-flash"
+                }
+            ]
+        },
+        "Orchestrator": {
+            "languageModelRequirements": [
+                {
+                    "purpose": "agent-selection",
+                    "identifier": "google/gemini-1.5-flash"
+                }
+            ]
+        },
+        "Universal": {
+            "languageModelRequirements": [
+                {
+                    "purpose": "chat",
+                    "identifier": "google/gemini-1.5-flash"
+                }
+            ]
+        },
+        "AppTester": {
+            "languageModelRequirements": [
+                {
+                    "purpose": "chat",
+                    "identifier": "google/gemini-1.5-flash"
+                }
+            ]
+        }
+    }
+}
