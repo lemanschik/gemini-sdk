@@ -16,7 +16,7 @@ cp.execSync(`${process.execPath} --experimental-sea-config ${seaConfigFilename}`
 
 
 // native-messaging-host.node or native-messaging-host.node.exe
-const binaryName = `native-messaging-host.${process.execPath.replaceAll('\\','/').split('/').at(-1)}`;
+export const binaryName = `native-messaging-host.${process.execPath.replaceAll('\\','/').split('/').at(-1)}`;
 fs.copyFileSync(process.execPath, binaryName);
 // https://www.electronjs.org/docs/latest/tutorial/fuses
 const fuse = `NODE_SEA_FUSE_fce680ab2cc467b6e072b8b5df1996b2`;
