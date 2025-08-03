@@ -2,11 +2,12 @@
 import fs from 'node:fs'
 import cp from 'node:child_process'
 const seaConfigFilename = 'native-messaging-host.sea-config.json';
+const injectionBlob = "native-messaging-host.blob";
 fs.writeFileSync(seaConfigFilename,JSON.stringify(
 {
   "main": "native-messaging-host.js",
   "disableExperimentalSEAWarning": true,
-  "output": "native-messaging-host.blob"
+  "output": injetionBlob
 }
 ));
 
@@ -19,7 +20,7 @@ const binaryName = `native-messaging-host.${process.execPath.replaceAll('\\','/'
 fs.copyFileSync(process.execPath, binaryName);
 // https://www.electronjs.org/docs/latest/tutorial/fuses
 const fuse = `NODE_SEA_FUSE_fce680ab2cc467b6e072b8b5df1996b2`;
-const basicCommand = `npx postject ${binaryName} NODE_SEA_BLOB sea-prep.blob --sentinel-fuse ${fuse} ${
+const basicCommand = `npx postject ${binaryName} NODE_SEA_BLOB ${injetionBlob} --sentinel-fuse ${fuse} ${
   process.platform.startsWith('dar') ? '--macho-segment-name NODE_SEA' : ''
 }`;
 
